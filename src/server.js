@@ -35,6 +35,4 @@ app.use(require('./routes'));
 
 const port = 3001;
 
-server.listen(port, () => {
-    console.log(`Server started in port ${port}`);
-});
+server.listen(process.env.PORT || 3001);
